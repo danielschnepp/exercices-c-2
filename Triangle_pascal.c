@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define ML 20
+#define ML 15
 
 
 int affiche(int nb_ligne, int tab[ML][ML]){
@@ -66,7 +66,7 @@ int main(){
     printf("Combien de ligne voulez-vous ? ");
     scanf("%d", &nb_ligne);
     if (nb_ligne > ML){
-        printf("Nombre de ligne trop important.");
+        printf("Nombre de ligne trop important.\n");
         return 0;
     }
     ligne(nb_ligne, tab);
