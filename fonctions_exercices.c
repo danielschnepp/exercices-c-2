@@ -53,3 +53,7 @@ int remplissage(struct personne *employe){
 
     return 1;
 }
+
+int main (){
+    return 1;
+}

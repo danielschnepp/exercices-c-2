@@ -3,7 +3,7 @@
 int main(){
 	int n1;
 	int n2;
-	int n3;
+	int n3 = 0;
 	int nb;
 	int i;
 	

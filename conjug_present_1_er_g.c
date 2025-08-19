@@ -37,8 +37,8 @@ void conjugaison(char verbe[],int longueur,int special){
 
 	int i;
 	int j;
-	char terminaisons[6][3] = { 'e',' ',' ','e','s',' ','e',' ',' ','o','n','s','e','z',' ','e','n','t' };
-	char pronoms[6][4] = { 'j','e',' ','\b','t','u',' ','\b','i','l',' ','\b','n','o','u','s','v','o','u','s','i','l','s',' ' };
+	char terminaisons[6][3] = { {'e',' ',' '},{'e','s',' '},{'e',' ',' '},{'o','n','s'},{'e','z',' '},{'e','n','t'} };
+	char pronoms[6][4] = { {'j','e',' ','\b'},{'t','u',' ','\b'},{'i','l',' ','\b'},{'n','o','u','s'},{'v','o','u','s'},{'i','l','s',' '} };
 
 	for (i = 0;i < 6;i++){
 		int k;
@@ -91,7 +91,7 @@ int verification(char verbe[],int longueur,int *new){
 int aller_verif(char verbe[],int longueur){
 
 	char aller[5] = {'a','l','l','e','r'};
-	int oui;
+	int oui = 0;
 	int i;
 
 	if (longueur != 5) return 0;

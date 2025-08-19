@@ -31,12 +31,12 @@ void affiche(struct s_point point){
 	return;
 }
 
-int remplir(struct s_point tab[]){
+int remplir(struct s_point   tab[]){
 	int i = 0;
 
 	do {
 		printf("Donner une lettre majuscule ainsi que deux nombres entiers (point 0 pour terminer) : ");
-		scanf("%c %d %d", tab[i].c, tab[i].x, tab[i].y);
+		scanf("%c %d %d", &tab[i].c, &tab[i].x, &tab[i].y);
 		i++;
 	} while ((tab[i].c != '0') && (i < MAX_POINTS));
 	

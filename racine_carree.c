@@ -4,14 +4,14 @@
 int main(){
 
     int nb;
-    double racine;
+    double racine = 0;
 
     do {
         printf("Donnez un nombre positif : ");
         scanf ("%d", &nb);
 
         if (nb > 0) {
-            racine = sqrt(nb);
+//            racine = sqrt(nb);
             printf("Sa racine carrée est : %e\n", racine);
         } else if (nb < 0) {
             printf("Svp positif\n");
